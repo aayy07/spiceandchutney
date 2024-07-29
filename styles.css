@@ -13,18 +13,18 @@ header {
     padding: 2rem 1rem;
     text-align: center;
     position: relative;
-    height: 200px; /* Adjust height as needed */
+    height: 200px; /* Default height */
 }
 
 @media (max-width: 768px) {
     header {
-        height: 300px; /* Adjust height for smaller screens */
+        height: 150px; /* Adjust height for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     header {
-        height: 200px; /* Adjust height for mobile screens */
+        height: 120px; /* Adjust height for mobile screens */
     }
 }
 
@@ -32,8 +32,8 @@ header {
     width: 100px;
     position: absolute;
     top: 10px;
-    left: 90px;
-    right: 90px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 header h1 {
@@ -45,6 +45,10 @@ header p {
     font-size: 1rem;
     margin: 0.5rem 0 0;
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
 }
 
 main {
