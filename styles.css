@@ -13,14 +13,14 @@ header {
     padding: 2rem 1rem;
     text-align: center;
     position: relative;
-    height: 200px; /* Default height */
+    height: 200px; /* Default height for PC */
 }
 
 @media (max-width: 768px) {
     header {
         background: url('banner-mobile.jpeg') no-repeat center center;
         background-size: cover;
-        height: 150px; /* Adjust height for smaller screens */
+        height: 150px;
     }
 }
 
@@ -28,7 +28,7 @@ header {
     header {
         background: url('banner-mobile.jpeg') no-repeat center center;
         background-size: cover;
-        height: 120px; /* Adjust height for mobile screens */
+        height: 120px;
     }
 }
 
@@ -55,6 +55,18 @@ header p {
     text-align: center;
 }
 
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #333;
+    color: #ff6347;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
 main {
     padding: 2rem 1rem;
 }
@@ -64,6 +76,7 @@ main {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    margin-bottom: 2rem;
 }
 
 #menu h2 {
@@ -71,6 +84,18 @@ main {
     margin-bottom: 1.5rem;
     font-size: 2rem;
     color: #ff6347;
+}
+
+.menu-category {
+    margin-bottom: 2rem;
+}
+
+.menu-category h3 {
+    font-size: 1.8rem;
+    color: #ff6347;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ff6347;
+    padding-bottom: 0.5rem;
 }
 
 .menu-item {
@@ -82,7 +107,7 @@ main {
     flex-wrap: wrap;
 }
 
-.menu-item h3 {
+.menu-item h4 {
     margin: 0;
     font-size: 1.5rem;
     color: #ff6347;
@@ -127,11 +152,11 @@ footer a:hover {
         font-size: 0.9rem;
     }
 
-    #menu h2 {
+    #menu h2, .menu-category h3 {
         font-size: 1.5rem;
     }
 
-    .menu-item h3 {
+    .menu-item h4 {
         font-size: 1.2rem;
     }
 
@@ -153,11 +178,11 @@ footer a:hover {
         font-size: 0.8rem;
     }
 
-    #menu h2 {
+    #menu h2, .menu-category h3 {
         font-size: 1.2rem;
     }
 
-    .menu-item h3 {
+    .menu-item h4 {
         font-size: 1rem;
     }
 
