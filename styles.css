@@ -18,12 +18,16 @@ header {
 
 @media (max-width: 768px) {
     header {
+        background: url('banner-mobile.jpeg') no-repeat center center;
+        background-size: cover;
         height: 150px; /* Adjust height for smaller screens */
     }
 }
 
 @media (max-width: 480px) {
     header {
+        background: url('banner-mobile.jpeg') no-repeat center center;
+        background-size: cover;
         height: 120px; /* Adjust height for mobile screens */
     }
 }
