@@ -9,22 +9,22 @@ body {
 header {
     background-color: #ff6347;
     color: white;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 header p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0.5rem 0 0;
 }
 
 main {
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
 #menu {
@@ -47,6 +47,7 @@ main {
     align-items: center;
     border-bottom: 1px solid #e0e0e0;
     padding: 1rem 0;
+    flex-wrap: wrap;
 }
 
 .menu-item h3 {
@@ -58,12 +59,14 @@ main {
 .menu-item p {
     margin: 0.5rem 0 0;
     font-size: 1rem;
+    flex: 1 1 100%;
 }
 
 .price {
     font-size: 1.2rem;
     color: #333;
     font-weight: bold;
+    margin-left: auto;
 }
 
 footer {
@@ -71,7 +74,57 @@ footer {
     padding: 1rem 0;
     background-color: #333;
     color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    #menu h2 {
+        font-size: 1.5rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .menu-item p {
+        font-size: 0.9rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.8rem;
+    }
+
+    #menu h2 {
+        font-size: 1.2rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1rem;
+    }
+
+    .menu-item p {
+        font-size: 0.8rem;
+    }
+
+    .price {
+        font-size: 0.9rem;
+    }
 }
