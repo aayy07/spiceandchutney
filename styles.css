@@ -1,3 +1,4 @@
+/* Global styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -13,7 +14,7 @@ header {
     padding: 2rem 1rem;
     text-align: center;
     position: relative;
-    height: 200px; /* Default height for PC */
+    height: 200px;
 }
 
 @media (max-width: 768px) {
@@ -21,6 +22,19 @@ header {
         background: url('banner-mobile.jpeg') no-repeat center center;
         background-size: cover;
         height: 150px;
+    }
+
+    /* Text color adjustment for mobile */
+    body {
+        color: #ff6347; /* Orange color */
+    }
+    
+    header {
+        color: #ff6347; /* Orange color for header text */
+    }
+    
+    .price {
+        color: #ff6347; /* Orange color for prices */
     }
 }
 
@@ -121,7 +135,7 @@ main {
 
 .price {
     font-size: 1.2rem;
-    color: #f4f4f4;
+    color: #ff6347;
     font-weight: bold;
     margin-left: auto;
 }
